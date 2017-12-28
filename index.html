@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="menu__container">
+        <div class="logo">
+            <a id="pull" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        
+        <ul id="menu" class="menu__list">
+            <li class="menu__list item">
+                <a href="#">
+                    Мои абонементы
+                </a>
+            </li>
+            <li class="menu__list item">
+                <a href="#">
+                    Мои платежи
+                </a>
+            </li>
+            <li class="menu__list item">
+                <a href="#">
+                    Мой депозит
+                </a>
+            </li>
+            <li class="menu__list item">
+                <a href="#">
+                    Мои посещения
+                </a>
+            </li>
+            <li class="menu__list item">
+                <a href="#">
+                    Мои брони
+                </a>
+            </li>
+             <li class="menu__list item">
+                <a href="#">
+                    Мои покупки
+                </a>
+            </li>
+             <li class="menu__list item">
+                <a href="#">
+                    Расписание занятий
+                </a>
+            </li>
+             <li class="menu__list item">
+                <a href="#">
+                    Профиль
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="table__container">
+        <div class="header__login">
+            <h1>Личный кабинет<br />
+                <strong>Абонимент "Утренняя йога"</strong>    
+            </h1>
+            <a class="exit" href="#">Выход</a>
+            <div class="usher__login">
+                <p>
+                  Вы вошли как <a href="#">Акунин Б</a>
+                </p>
+                <p>
+                  Баланс <a href="#">6397.0 грн</a>
+                </p>
+            </div>
+        </div>
+        <div class="table__information">
+         <h2>Иформация по абонименту</h2>
+          <table class="table__options">
+              <tr>
+                <td class="blue-text">Дата начала</td>
+                <td>27.12.2017</td>
+              </tr>
+              <tr>
+                <td class="blue-text">Дата окончания</td>
+                <td>07.02.2018</td>
+              </tr>
+              <tr>
+                <td class="blue-text">К-во занятий по абонименту</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td class="blue-text">К-во занятий осталось</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td class="blue-text">Стоимость со скидками</td>
+                <td>1500.00</td>
+              </tr>
+              <tr>
+                <td class="blue-text">Долг</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="blue-text">Дата покупки</td>
+                <td>27.12.2017</td>
+              </tr>
+            </table>
+        </div>
+        <div class="table__information history__table">
+         <h2>История посещений</h2>
+          <table class="table__options">
+              <tr>
+                  <th>№</th>
+                  <th width="30%">Дата, время</th>
+                  <th>Группа</th>
+                  <th>Отметка</th>
+                  <th>Преподаватель</th>
+                  <th>Филиал</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ср, 27.12.1017 13:00</td>
+                <td>йога - й мл.</td>
+                <td>+</td>
+                <td>Ильенко Анна</td>
+                <td>Филиал №1 Центральный</td>
+              </tr>
+            </table>
+        </div>
+        <div class="table__information history__lock-table">
+         <h2>История замораживаний</h2>
+          <table class="table__options">
+              <tr>
+                  <th>№</th>
+                  <th>Дата c</th>
+                  <th>Дата по</th>
+                  <th>Дней</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>27.12.2017</td>
+                <td>31.12.2017</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>01.01.2018</td>
+                <td>07.01.2018</td>
+                <td>5</td>
+              </tr>
+            </table>
+        </div>
+        <div class="button__back">
+            <a href="#"><< Назад</a>
+        </div>
+    </div> 
+<footer>Copyright 2012 <a href="#">Otmechalka.com</a> Все права защищены</footer>
+
+</div>  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#pull").click(function(){
+        $("#menu").slideToggle("slow");
+         if($(window.resize).width() >= 993){
+            $('#menu').removeAttr('style');
+        }  
+    });
+});
+</script>
+</body>
+</html>
